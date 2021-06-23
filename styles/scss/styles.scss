@@ -1,11 +1,15 @@
+@import 'setup';
+@import 'variables';
+@import 'mixins';
+
 header {
-    background-image: url(/assets/home-image-1.jpg);
+    // background-image: url(/assets/home-image-1.jpg);
     height: 80vh;
     background-size: cover;
     background-position: center;
 }
 
 .logo {
-    font-family: 'Dokdo', cursive;
-    font-size: 41.5px;
+    font-family: $logoFont;
+    color: $primaryGold;
 }
