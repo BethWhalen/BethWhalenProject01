@@ -2,14 +2,70 @@
 @import 'variables';
 @import 'mixins';
 
-header {
-    // background-image: url(/assets/home-image-1.jpg);
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
+.logo {
+    @include headings(41.5px);
 }
 
-.logo {
-    font-family: $logoFont;
-    color: $primaryGold;
+p {
+    @include bodyText;
+}
+
+// header styles start here
+.headerContent {
+    background-image: url(/assets/home-image-1.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // border: 3px solid yellow;
+}
+.topNav {
+    display: flex;
+    align-items: center;
+    // border: 2px solid lime;
+}
+
+.topNav .logo {
+    margin: 10px 50px;
+    // border: 2px dotted blue;
+}
+.navLinks {
+    display: flex;
+    flex: 1 0 50%;
+    justify-content: flex-end;
+    // border: 2px solid pink;
+}
+.navLinks li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    @include navFont;
+    padding: 10px;
+}
+
+.feature {
+    display: flex;
+
+    // border: 2px solid red;
+}
+
+h1 {
+    color: $accentA;
+    font-family: $secondaryFont;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 20px;
+    border: 2px solid cornsilk;
+}
+h1 .logo {
+    font-size: 115px;
+}
+
+
+// new adventure styles start
+.newAdventure {
+    background-color: $accentC;
 }

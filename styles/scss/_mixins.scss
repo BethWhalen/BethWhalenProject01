@@ -1,4 +1,23 @@
-// .logo {
-//     font-family: $logoFont;
-//     color: $primaryGold;
-// }
+@mixin navFont {
+    font-family: $secondaryFont;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 1px;
+    // center?? what is this property
+    color: $accentA;
+}
+
+@mixin headings($fontSize) {
+    font-size: ($fontSize);
+    font-family: $primaryFont;
+    color: $primaryColor;
+}
+
+@mixin bodyText {
+    font-family: $secondaryFont;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: $accentA;
+}
