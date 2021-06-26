@@ -1,0 +1,24 @@
+.articles {
+    background-color: $accentB;
+    
+}
+
+.articleContainers {
+    display: flex;
+}
+
+.ArticlesTextAndButtonContainer {
+
+}
+// should really try and combine this styling with the below textandbuttoncontainer...need to see what should be different...then think about making a mixin for a certain container type...
+
+// .textAndButtonContainer {
+//     margin: 100px 80px 75px 0;
+//     flex: 0 4 auto;
+//         h2 {
+//             margin: 0;
+//         }
+//         p {
+//             margin: 0;
+//         }
+// }
