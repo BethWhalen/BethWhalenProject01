@@ -235,37 +235,24 @@ html {
   overflow: hidden;
 }
 
-.logo {
-  font-size: 41.5px;
-  font-family: "Dokdo", cursive;
-  color: #FFC600;
-}
-
-p {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 2px;
-  color: #FAFFFE;
-}
-
 .headerContent {
-  background-image: url(/assets/home-image-1.jpg);
-  height: 75vh;
+  background-image: url(../assets/home-image-1.jpg);
+  height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border: 3px solid yellow;
 }
 
 .topNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 15%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
 .topNav .logo {
   margin: 10px 50px;
 }
@@ -281,12 +268,10 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-
 .navLinks li {
   list-style-type: none;
   margin: 0 20px;
 }
-
 .navLinks a {
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -298,25 +283,152 @@ p {
   padding: 10px;
 }
 
+.featureContainer {
+  height: 85%;
+  position: relative;
+}
+
 .feature {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.feature img {
+  width: 40%;
+  position: absolute;
+  top: 60px;
+  left: 0;
 }
 
 h1 {
+  width: 60%;
   color: #FAFFFE;
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-size: 40px;
-  padding: 20px;
-  border: 2px solid cornsilk;
+  line-height: 58px;
+  margin: 75px 0;
 }
-
 h1 .logo {
   font-size: 115px;
 }
 
 .newAdventure {
   background-color: #1E140E;
+  padding: 50px 0;
+  border: 4px dotted red;
+}
+
+.newAdventureContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.textAndButtonContainer {
+  margin: 100px 80px 75px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 4 auto;
+          flex: 0 4 auto;
+}
+.textAndButtonContainer h2 {
+  margin: 0;
+}
+.textAndButtonContainer p {
+  margin: 0;
+}
+
+.imgContainer {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
+}
+.imgContainer img {
+  -webkit-box-shadow: -15px 15px #555F02;
+          box-shadow: -15px 15px #555F02;
+}
+
+.gallery {
+  background-color: #262725;
+  padding: 100px 0;
+}
+
+.galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+.galleryContainer li {
+  list-style-type: none;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+.galleryContainer li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.infoLinks {
+  background-color: #1E140E;
+}
+
+.infoLinksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  font-size: 41.5px;
+  font-family: "Dokdo", cursive;
+  color: #FFC600;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #FAFFFE;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: "Dokdo", cursive;
+  color: #FFC600;
+  line-height: 58px;
+  letter-spacing: 4.9px;
+}
+
+button {
+  background: #555F02;
+  border: none;
+  font-family: "Dokdo", cursive;
+  color: #FAFFFE;
+  font-size: 30px;
+  padding: 5px 10px;
+  margin: 10px 0;
 }

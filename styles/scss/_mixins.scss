@@ -8,8 +8,8 @@
     color: $accentA;
 }
 
-@mixin headings($fontSize) {
-    font-size: ($fontSize);
+@mixin headings($sizeValue) {
+    font-size: ($sizeValue);
     font-family: $primaryFont;
     color: $primaryColor;
 }
@@ -20,4 +20,14 @@
     line-height: 32px;
     letter-spacing: 2px;
     color: $accentA;
+}
+
+@mixin buttons {
+    background: $secondaryColor;
+    border: none;
+    font-family: $primaryFont;
+    color: $accentA;
+    font-size: 30px;
+    padding: 5px 10px;
+    margin: 10px 0;
 }

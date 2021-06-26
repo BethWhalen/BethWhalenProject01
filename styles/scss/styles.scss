@@ -1,6 +1,28 @@
 @import 'setup';
 @import 'variables';
 @import 'mixins';
+@import 'homeHeader';
+@import 'homeSection01NewAdventure';
+@import 'homeSection02Gallery';
+@import 'homeSection03InfoLinks';
+
+
+
+// general styling
+// html {
+// 	font-size: 62.5%;
+// }
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .logo {
     @include headings(41.5px);
@@ -10,62 +32,12 @@ p {
     @include bodyText;
 }
 
-// header styles start here
-.headerContent {
-    background-image: url(/assets/home-image-1.jpg);
-    height: 75vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    // border: 3px solid yellow;
-}
-.topNav {
-    display: flex;
-    align-items: center;
-    // border: 2px solid lime;
+h2 {
+    @include headings(45px);
+    line-height: 58px;
+    letter-spacing: 4.9px;
 }
 
-.topNav .logo {
-    margin: 10px 50px;
-    // border: 2px dotted blue;
-}
-.navLinks {
-    display: flex;
-    flex: 1 0 50%;
-    justify-content: flex-end;
-    // border: 2px solid pink;
-}
-.navLinks li {
-    list-style-type: none;
-    margin: 0 20px;
-}
-
-.navLinks a {
-    text-decoration: none;
-    @include navFont;
-    padding: 10px;
-}
-
-.feature {
-    display: flex;
-
-    // border: 2px solid red;
-}
-
-h1 {
-    color: $accentA;
-    font-family: $secondaryFont;
-    font-weight: 500;
-    font-size: 40px;
-    padding: 20px;
-    border: 2px solid cornsilk;
-}
-h1 .logo {
-    font-size: 115px;
-}
-
-
-// new adventure styles start
-.newAdventure {
-    background-color: $accentC;
+button {
+    @include buttons;
 }

@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="headerContent">
-        <nav class="topNav">
+        <nav class="topNav wrapper">
             <div class="logoDiv">
                 <p class="logo">Mindn'Soul</p>
                 <!-- should this be something other than a p -->
@@ -25,35 +25,46 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="feature">
-            <img src="../assets/group.jpg" alt="backlit person meditating on a deck outside somewhere tropical">
-            <h1>welcome to <span class="logo">Mindn'Soul</span></h1>
+        <div class="featureContainer">
+            <div class="feature wrapper">
+                <img src="../assets/group.jpg" alt="backlit person meditating on a deck outside somewhere tropical">
+                <h1>welcome to <span class="logo">Mindn'Soul</span></h1>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="newAdventure">
-            <div class="textAndButtonContainer">
-                <h2>New Adventure</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia veritatis cum incidunt, quia quo illo dolorem. Earum ipsum repellendus a cupiditate quis consequuntur aperiam nisi est deserunt eligendi voluptatum accusamus, excepturi placeat illum? Ut cupiditate vitae quidem voluptatibus quod fugit magnam iusto, harum dicta. Dolorum fuga sequi nesciunt officia quos fugiat omnis iste harum dignissimos modi ut totam itaque quia delectus accusantium tempore voluptatum nostrum non esse velit quasi impedit, reprehenderit perspiciatis! Commodi reiciendis asperiores facilis doloribus iure numquam, inventore sed cumque nisi aut incidunt ad ipsum, saepe explicabo rem illo reprehenderit iste, accusamus eos dicta odit porro aspernatur repellendus.</p>
-                <button>Find Out More</button>
+            <div class="newAdventureContainer wrapper">
+                <div class="textAndButtonContainer">
+                    <h2>New Adventure</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis eveniet enim vel, molestias amet harum dolores doloremque, numquam, quasi reiciendis quas. Ab pariatur atque est perferendis omnis itaque quisquam laboriosam earum quasi animi culpa illum sunt eligendi ad, repudiandae dicta tempore eum aliquid debitis voluptatibus quis! Minima repudiandae, eligendi maxime suscipit incidunt voluptas delectus necessitatibus.</p>
+                    <button>Find Out More</button>
+                </div>
+                <!-- end of textAndButtonContainer -->
+                <div class="imgContainer">
+                    <img src="../assets/small-box.jpg" alt="row of of peopole practicing yoga outside of a building, blurred leaves in the forground">
+                </div>
             </div>
-            <!-- end of textAndButtonContainer -->
-            <div>
-                <img src="../assets/small-box.jpg" alt="row of of peopole practicing yoga outside of a building, blurred leaves in the forground">
-            </div>
+            <!-- end newAdventureContainer div -->
         </section>
         <!-- end New Adventure section -->
         <section class="gallery">
-            <div class="galleryContainer">
-                <img src="../assets/gallery-image1.jpg" alt="woman practicing yoga outside in a headstand pose near a brink building">
-                <img src="../assets/gallery-image2.jpg" alt="man and woman practicing yoga in a pose together. Man laying on his back with hands and feet in the air. The woman being held up by the man">
-                <img src="../assets/gallery-image3.jpg" alt="view of ocean and the back of a woman sitting on the beach meditating">
-            </div>
+            <ul class="galleryContainer wrapper">
+                <li>
+                    <img src="../assets/gallery-image1.jpg" alt="woman practicing yoga outside in a headstand pose near a brink building">
+                </li>
+                <li>
+                    <img src="../assets/gallery-image2.jpg" alt="man and woman practicing yoga in a pose together. Man laying on his back with hands and feet in the air. The woman being held up by the man">
+                </li>
+                <li>
+                    <img src="../assets/gallery-image3.jpg" alt="view of ocean and the back of a woman sitting on the beach meditating">
+                </li>
+            </ul>
         </section>
         <!-- end gallery section -->
         <section class="infoLinks">
-            <div class="infoLinksContainer">
+            <div class="infoLinksContainer wrapper">
                 <div class="customOffers">
                     <a href=""><i class="fas fa-home"></i>Customized Offers</a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quis alias quas accusantium, est, doloribus, deleniti molestias quaerat reiciendis dicta repellendus inventore nisi fugit aut!</p>
@@ -62,6 +73,9 @@
                     <a href=""><i class="fas fa-users"></i>Community</a>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ipsa dicta eligendi, porro ea necessitatibus illo, laborum, tenetur neque soluta saepe sint beatae? Nemo, cum?</p>
                 </div>
+            </div>
+            <!-- end infoLinksContainer1 -->
+            <div class="infoLinksContainer wrapper">
                 <div class="blog">
                     <a href=""><i class="fas fa-file"></i>Blog</a>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt ipsa dicta eligendi, porro ea necessitatibus illo,

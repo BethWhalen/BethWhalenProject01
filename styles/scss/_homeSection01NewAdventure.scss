@@ -1,0 +1,29 @@
+// new adventure styles start
+.newAdventure {
+    background-color: $accentC;
+    padding: 50px 0;
+    border: 4px dotted red;
+}
+
+.newAdventureContainer {
+    display: flex;
+}
+
+.textAndButtonContainer {
+    margin: 100px 80px 75px 0;
+    flex: 0 4 auto;
+        h2 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+}
+
+.imgContainer {
+    align-self: center;
+    flex: 2 1 auto;
+        img {
+            box-shadow: -15px 15px $secondaryColor;
+        }
+}

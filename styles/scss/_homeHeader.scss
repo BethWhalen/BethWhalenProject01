@@ -1,0 +1,62 @@
+// header styles start here
+.headerContent {
+    background-image: url(../assets/home-image-1.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid yellow;
+}
+.topNav {
+    display: flex;
+    height: 15%;
+    align-items: center;
+        .logo {
+            margin: 10px 50px;
+        }
+}
+
+.navLinks {
+    display: flex;
+    flex: 1 0 50%;
+    justify-content: flex-end;
+    // border: 2px solid pink;
+        li {
+            list-style-type: none;
+            margin: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            @include navFont;
+            padding: 10px;
+        }
+}
+
+.featureContainer {
+    height: 85%;
+    position: relative;
+}
+.feature {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+        img {
+            width: 40%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+}
+
+h1 {
+    width: 60%;
+    color: $accentA;
+    font-family: $secondaryFont;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 58px;
+    margin: 75px 0;
+        .logo {
+            font-size: 115px;
+        }
+}
