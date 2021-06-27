@@ -8,7 +8,8 @@
 @import 'homeSection04Articles';
 @import 'homeSection05Banner';
 @import 'homeSection06FreeTrials';
-@import 'homeFooter';
+@import 'footer';
+@import 'blogHeader';
 
 
 // general styling
@@ -41,6 +42,16 @@ h2 {
     letter-spacing: 4.9px;
 }
 
+h3 {
+    font-family: $primaryFont;
+    font-size: 35px;
+    color: $accentA;
+    // add line height / letter spacing
+}
+
+li {
+    list-style-type: none;
+}
 button {
     @include buttons;
 }

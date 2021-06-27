@@ -1,19 +1,11 @@
-// header styles start here
-.headerContent {
-    background-image: url(../assets/home-image-1.jpg);
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.homeHeader {
+    @include headerBackground(url(../assets/home-image-1.jpg));
 }
 
 .topNav {
     display: flex;
     height: 15%;
     align-items: center;
-        .logo {
-            margin: 10px 50px;
-        }
 }
 
 .navLinks {
@@ -22,7 +14,6 @@
     justify-content: flex-end;
     // border: 2px solid pink;
         li {
-            list-style-type: none;
             margin: 0 20px;
         }
         a {
@@ -49,7 +40,8 @@
         }
 }
 
-h1 {
+// h1:
+.welcomeHeading1 {
     width: 60%;
     color: $accentA;
     font-family: $secondaryFont;

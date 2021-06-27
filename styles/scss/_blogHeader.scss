@@ -1,0 +1,72 @@
+.blogHeader {
+    @include headerBackground(url(../assets/blog-image-1.jpg))
+}
+
+// nav is styled in the homeHeader.scss with the following: 
+
+// .topNav {
+//     display: flex;
+//     height: 15%;
+//     align-items: center;
+// }
+
+// .navLinks {
+//     display: flex;
+//     flex: 1 0 50%;
+//     justify-content: flex-end;
+//     // border: 2px solid pink;
+//         li {
+//             list-style-type: none;
+//             margin: 0 20px;
+//         }
+//         a {
+//             text-decoration: none;
+//             @include navFont;
+//             padding: 10px;
+//         }
+// }
+
+// h1: 
+.blogHeading1 {
+    @include headings(105px);
+    line-height: 69.6px;
+    letter-spacing: 10.9px;
+    position: relative;
+    top: 35%;
+}
+
+main {
+    background-color: $accentC;
+}
+
+.blog {
+    position: relative;
+}
+
+.blogPostContainer {
+    width: 65%;
+    border-right: 5px solid $secondaryColor;
+    border-bottom: 5px solid $secondaryColor;
+    padding: 10px;
+    position: relative;
+    top: -100px;
+        img {
+            box-shadow: 15px 15px $secondaryColor;
+            position: relative;
+            top: -25px;
+        }
+}
+
+
+.missionAside {
+    width: 25%;
+    background-color: $secondaryColor;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    box-shadow: -15px 15px $secondaryColor;
+        img {
+            
+        }
+}
+
