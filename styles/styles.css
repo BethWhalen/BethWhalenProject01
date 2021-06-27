@@ -425,34 +425,24 @@ h1 .logo {
   background-color: #262725;
 }
 
-.articleContainer1 {
+.articles1Container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 85%;
   border: 5px dashed orchid;
 }
 
-.articleImgContainer1 {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 auto;
-          flex: 2 1 auto;
+.articles1ImgContainer {
   border: 3px solid white;
 }
-.articleImgContainer1 img {
-  -webkit-box-shadow: 15px 15px #FFC600;
-          box-shadow: 15px 15px #FFC600;
+.articles1ImgContainer img {
   border: 5px dashed cornflowerblue;
 }
 
 .ArticlesTextAndButtonContainer1 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 3 auto;
-          flex: 0 3 auto;
-  margin: 50px 100px;
   border: 4px solid #ffd900;
 }
-.articleContainer2 {
+.articles2Container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,12 +453,10 @@ h1 .logo {
   border: 4px dotted gold;
 }
 
-.articleImgContainer2 {
+.articles2ImgContainer {
   border: 4px dashed red;
 }
-.articleImgContainer2 img {
-  -webkit-box-shadow: -15px 15px #FFC600;
-          box-shadow: -15px 15px #FFC600;
+.articles2ImgContainer img {
   border: 3px dashed lime;
 }
 
