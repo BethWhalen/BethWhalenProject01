@@ -6,6 +6,9 @@
 @import 'homeSection02Gallery';
 @import 'homeSection03InfoLinks';
 @import 'homeSection04Articles';
+@import 'homeSection05Banner';
+@import 'homeSection06FreeTrials';
+@import 'homeFooter';
 
 
 // general styling
@@ -21,7 +24,7 @@
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    // display: block;
 }
 
 .logo {

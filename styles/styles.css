@@ -237,7 +237,7 @@ html {
 
 .headerContent {
   background-image: url(../assets/home-image-1.jpg);
-  height: 70vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -297,6 +297,7 @@ html {
           justify-content: flex-end;
 }
 .feature img {
+  max-width: 550px;
   width: 40%;
   position: absolute;
   top: 60px;
@@ -394,6 +395,11 @@ h1 .logo {
   color: #FFC600;
 }
 
+.customOffers,
+.community {
+  margin-bottom: 50px;
+}
+
 .textContainer {
   position: relative;
   width: calc(100% / 2);
@@ -419,10 +425,92 @@ h1 .logo {
   background-color: #262725;
 }
 
-.articleContainers {
+.articleContainer1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 85%;
+  border: 5px dashed orchid;
+}
+
+.articleImgContainer1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
+  border: 3px solid white;
+}
+.articleImgContainer1 img {
+  -webkit-box-shadow: 15px 15px #FFC600;
+          box-shadow: 15px 15px #FFC600;
+  border: 5px dashed cornflowerblue;
+}
+
+.ArticlesTextAndButtonContainer1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 3 auto;
+          flex: 0 3 auto;
+  margin: 50px 100px;
+  border: 4px solid #ffd900;
+}
+.articleContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px dashed orchid;
+}
+
+.ArticlesTextAndButtonContainer2 {
+  border: 4px dotted gold;
+}
+
+.articleImgContainer2 {
+  border: 4px dashed red;
+}
+.articleImgContainer2 img {
+  -webkit-box-shadow: -15px 15px #FFC600;
+          box-shadow: -15px 15px #FFC600;
+  border: 3px dashed lime;
+}
+
+.banner {
+  background-image: url(../assets/banner-image.jpg);
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.freeTrials {
+  background-color: #1E140E;
+}
+
+.trialsContainer {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.trialsContainer h2 {
+  margin: 0 auto;
+}
+.trialsContainer p {
+  margin: 10px auto;
+}
+
+footer {
+  background-color: #262725;
+  text-align: center;
+  padding: 10px 0;
+}
+footer p {
+  margin: auto;
 }
 
 .wrapper {
@@ -434,7 +522,6 @@ h1 .logo {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .logo {

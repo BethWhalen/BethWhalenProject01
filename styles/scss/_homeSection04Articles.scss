@@ -2,23 +2,60 @@
     background-color: $accentB;
     
 }
-
-.articleContainers {
+// this is for both article containers for the first and second sub 'sections' (divs)
+.articleContainer1 {
     display: flex;
+    // justify-content: space-between;
+    height: 85%;
+    // position: relative;
+    border: 5px dashed orchid;
 }
 
-.ArticlesTextAndButtonContainer {
-
+// container 1
+.articleImgContainer1 {
+    flex: 2 1 auto;
+    border: 3px solid white;
+        img {
+            // position: aboslute;
+            // top: 60px;
+            box-shadow: 15px 15px $primaryColor;
+            border: 5px dashed cornflowerblue;
+        }
 }
-// should really try and combine this styling with the below textandbuttoncontainer...need to see what should be different...then think about making a mixin for a certain container type...
-
-// .textAndButtonContainer {
-//     margin: 100px 80px 75px 0;
-//     flex: 0 4 auto;
-//         h2 {
-//             margin: 0;
-//         }
+.ArticlesTextAndButtonContainer1 {
+    flex: 0 3 auto;
+    
+    margin: 50px 100px;
+    border: 4px solid rgb(255, 217, 0);
+        h2 {
+            // margin: 0;
+        }
 //         p {
 //             margin: 0;
 //         }
-// }
+}
+
+// container 2
+.articleContainer2 {
+    display: flex;
+    // justify-content: space-between;
+    // height: 100%;
+    // position: relative;
+    border: 5px dashed orchid;
+}
+
+.ArticlesTextAndButtonContainer2 {
+    border: 4px dotted gold;
+
+}
+
+.articleImgContainer2 {
+//     flex: 2 1 auto;
+    border: 4px dashed red;
+        img {
+//             // position: aboslute;
+            box-shadow: -15px 15px $primaryColor;
+            border: 3px dashed lime;
+        }
+}
+// // should really try and combine this styling with the below textandbuttoncontainer...need to see what should be different...then think about making a mixin for a certain container type...

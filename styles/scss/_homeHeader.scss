@@ -1,7 +1,7 @@
 // header styles start here
 .headerContent {
     background-image: url(../assets/home-image-1.jpg);
-    height: 70vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,6 +41,7 @@
     display: flex;
     justify-content: flex-end;
         img {
+            max-width: 550px; 
             width: 40%;
             position: absolute;
             top: 60px;
