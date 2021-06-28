@@ -21,10 +21,10 @@
                 <!-- should this be something other than a p -->
             </div>
             <ul class="navLinks">
-                <li><a href="#">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="../blog.html">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
         <h1 class="blogHeading1 wrapper">Blog</h1>
@@ -54,18 +54,50 @@
                 <div>
                     <h3>Recent Posts</h3>
                     <ul>
-                        <li>Lorem ipsum dolor sit id</li>
-                        <li>Amet consectetur adipisicing</li>
-                        <li>Numquam saepe cupiditate</li>
-                        <li>elit.  consectetur delectus</li>
+                        <li>Donec facilisis tortor ut</li>
+                        <li>Augue lacinia at viverra</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Scelerisque nec pharetra</li>
                     </ul>
                 </div>
             </aside>
-
+            <!-- QUESTION FOR JUNO INSTRUCTOR: IS THIS THE BEST PLACEMENT OF THE ASIDE, OR SHOULD IT BE OUTSIDE THE SECTION/AFTER THIS BLOG SECTION AND BEFORE THE COMMENTS SECTION? -->
         </section>
+        <!-- end blog section -->
 
         <section class="comments">
-            <h2>Comments:</h2>
+            <h2 class="wrapper">Comments:</h2>
+            <div class="commentContainer wrapper">
+                <div class="commenterImg">
+                    <img src="../assets/comment-image.jpg" alt="portrait of man looking into camera and wearing black">
+                </div>
+                <article class="commentArticleTitleAndText">
+                    <h4>Tuesday October 9th, 2019 by Davin</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur facere sapiente magnam quod aspernatur tenetur, optio fuga in necessitatibus magni praesentium.</p>
+                </article>
+            </div>
+            <div class="commentContainer wrapper">
+                <div class="commenterImg">
+                    <img src="../assets/comment-image2.jpg" alt="two zebras standing with their heads together standing nature">
+                </div>
+                <article class="commentArticleTitleAndText">
+                    <h4>Wednesday October 10th, 2019 by Lisa</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur facere sapiente magnam quod aspernatur tenetur fuga.</p>
+                </article>
+            </div>
+        </section>
+        <section class="commentFormSection">
+            <form action="#" method="#" name="register" class="wrapper">
+                <div class="formSubFlexContainer">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="Email address">
+                </div>
+                <label for="comment">Post Comment</label>
+                <textarea name="user-comment" id="comment" placeholder="Comment" cols="70" rows="10"></textarea>
+                <input type="submit" value="Post Comment">
+            </form>
         </section>
 
 

@@ -1,5 +1,5 @@
-.blogHeader {
-    @include headerBackground(url(../assets/blog-image-1.jpg))
+.contactHeader {
+    @include headerBackground(url(../assets/contact-image-1.jpg))
 }
 
 // nav is styled in the homeHeader.scss with the following: 
@@ -27,7 +27,7 @@
 // }
 
 // h1: 
-.blogHeading1 {
+.contactHeading1 {
     @include headings(105px);
     line-height: 69.6px;
     letter-spacing: 10.9px;
@@ -38,35 +38,3 @@
 main {
     background-color: $accentC;
 }
-
-.blog {
-    position: relative;
-}
-
-.blogPostContainer {
-    width: 65%;
-    border-right: 5px solid $secondaryColor;
-    border-bottom: 5px solid $secondaryColor;
-    padding: 10px;
-    position: relative;
-    top: -100px;
-        img {
-            box-shadow: 15px 15px $secondaryColor;
-            position: relative;
-            top: -25px;
-        }
-}
-
-
-.missionAside {
-    width: 25%;
-    background-color: $secondaryColor;
-    position: absolute;
-    right: 0;
-    top: 40px;
-    box-shadow: -15px 15px $secondaryColor;
-        img {
-            
-        }
-}
-

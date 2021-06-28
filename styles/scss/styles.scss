@@ -9,7 +9,8 @@
 @import 'homeSection05Banner';
 @import 'homeSection06FreeTrials';
 @import 'footer';
-@import 'blogHeader';
+@import 'blogPage';
+@import 'contactPage';
 
 
 // general styling
@@ -47,6 +48,12 @@ h3 {
     font-size: 35px;
     color: $accentA;
     // add line height / letter spacing
+}
+
+//used for date and name of comments section
+h4 {
+    @include bodyText;
+    color: $primaryColor;
 }
 
 li {

@@ -1,0 +1,174 @@
+.blogHeader {
+    @include headerBackground(url(../assets/blog-image-1.jpg))
+}
+
+// nav is styled in the homeHeader.scss with the following: 
+
+// .topNav {
+//     display: flex;
+//     height: 15%;
+//     align-items: center;
+// }
+
+// .navLinks {
+//     display: flex;
+//     flex: 1 0 50%;
+//     justify-content: flex-end;
+//     // border: 2px solid pink;
+//         li {
+//             list-style-type: none;
+//             margin: 0 20px;
+//         }
+//         a {
+//             text-decoration: none;
+//             @include navFont;
+//             padding: 10px;
+//         }
+// }
+
+// h1: 
+.blogHeading1 {
+    @include headings(105px);
+    line-height: 69.6px;
+    letter-spacing: 10.9px;
+    position: relative;
+    top: 35%;
+}
+
+main {
+    background-color: $accentC;
+}
+
+.blog {
+    position: relative;
+}
+
+.blogPostContainer {
+    width: 65%;
+    border-right: 5px solid $secondaryColor;
+    border-bottom: 5px solid $secondaryColor;
+    padding: 10px;
+    position: relative;
+    top: -100px;
+        img {
+            box-shadow: 15px 15px $secondaryColor;
+            position: relative;
+            top: -25px;
+        }
+}
+
+
+.missionAside {
+    width: 26%;
+    background-color: $secondaryColor;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    box-shadow: -15px 15px $secondaryColor;
+        ul {
+            padding: 0 5px;
+        }
+            li {
+                @include bodyText; 
+                // list-style-type: disc;
+                // padding-left: 5px;
+            }
+            li::before {
+                content: "\2022";
+                color: $primaryColor;
+                display: inline-block;
+                width: 15px;
+                margin-right: 10px;
+            }
+}
+
+.missionAside h3 {
+    margin: 25px 0;
+}
+
+.comments {
+    width: 65%;
+        h2 {
+            color: $accentA;
+            position: relative;
+            top: -30px;
+        }
+}
+
+.commentContainer {
+    display: flex;
+    padding: 30px 0;
+        .commenterImg {
+            flex: 2 1 auto;
+                img {
+                    width: 100%;
+                }
+        }
+        .commentArticleTitleAndText {
+            width: 80%;
+            padding-left: 30px;
+                h4 {
+                    margin-top: 0;
+                }
+        }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+
+label {
+    display: none; 
+}
+
+input {
+    @include bodyText;    
+    padding: 15px;
+    border-style: none;
+    border-bottom: 2px solid $primaryColor;
+    background-color: $accentC;
+    margin-bottom: 45px;
+}
+
+.commentFormSection {
+    #name {
+        margin-right: 35px;
+    }
+    #email {
+        margin-left: 35px;
+    }
+}
+
+textarea {
+    @include bodyText;
+    padding: 15px;
+    border: 2px solid $primaryColor;
+    background-color: $accentC;
+    margin-bottom: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    @include bodyText;
+}
+
+.formSubFlexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.formSubFlexContainer input {
+    width: calc(98% / 2);
+}
+
+input[type="submit"] {
+    @include buttons;
+    margin: 30px 0 90px 0;
+}
+
+input:active,
+input:focus {
+    border: 2px solid $accentA;
+}
