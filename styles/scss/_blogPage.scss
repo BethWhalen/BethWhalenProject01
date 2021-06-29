@@ -57,7 +57,6 @@ main {
         }
 }
 
-
 .missionAside {
     width: 26%;
     background-color: $secondaryColor;
@@ -113,62 +112,6 @@ main {
         }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    flex-wrap: wrap;
-}
-
-label {
-    display: none; 
-}
-
-input {
-    @include bodyText;    
-    padding: 15px;
-    border-style: none;
-    border-bottom: 2px solid $primaryColor;
-    background-color: $accentC;
-    margin-bottom: 45px;
-}
-
-.commentFormSection {
-    #name {
-        margin-right: 35px;
-    }
-    #email {
-        margin-left: 35px;
-    }
-}
-
-textarea {
-    @include bodyText;
-    padding: 15px;
-    border: 2px solid $primaryColor;
-    background-color: $accentC;
-    margin-bottom: 15px;
-}
-
-input::placeholder,
-textarea::placeholder {
-    @include bodyText;
-}
-
-.formSubFlexContainer {
-    display: flex;
-    justify-content: space-between;
-}
-.formSubFlexContainer input {
-    width: calc(98% / 2);
-}
-
-input[type="submit"] {
-    @include buttons;
-    margin: 30px 0 90px 0;
-}
-
-input:active,
-input:focus {
-    border: 2px solid $accentA;
+.commentForm .formSubFlexContainer input {
+    width: calc(95% / 2);
 }

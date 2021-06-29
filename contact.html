@@ -32,19 +32,50 @@
         <h1 class="contactHeading1 wrapper">Get in Touch</h1>
     </header>
     <main>
-        <section class="contactFormSection">
-            <form action="#" method="#" name="register" class="wrapper">
-                <div class="formSubFlexContainer">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Name">
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" placeholder="Email address">
+        <div class="contactFlexContainer wrapper">
+            <section class="contactFormSection">
+                <form action="#" method="#" name="register" class="contactForm">
+                    <div class="formSubFlexContainer">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea name="user-message" id="message" placeholder="Message" cols="50" rows="5"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <aside class="contactInfo">
+                <div class="socialIcons">
+                    <ul class="socialIconsList">
+                        <li>
+                            <a href="#" aria-label="Go to FaceBook"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Go to Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Go to Twitter"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Call Us"><i class="fab fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <label for="message">Message</label>
-                <textarea name="user-message" id="message" placeholder="Message" cols="70" rows="10"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+                <p>info@email.com</p>
+                <div class="addressContainerList">
+                    <ul>
+                        <li>123-456-7890</li>
+                        <li>123 Queen Street West,</li>
+                        <li>Unit 10</li>
+                        <li>Toronto, Ontario</li>
+                        <li>M5V2D5</li>
+                    </ul>
+                </div>                
+            </aside>
+        </div>
+        <!-- end wrapper div -->
 
 
     </main>

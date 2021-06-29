@@ -10,13 +10,30 @@
 @import 'homeSection06FreeTrials';
 @import 'footer';
 @import 'blogPage';
+@import 'formGeneralStyle';
 @import 'contactPage';
 
 
 // general styling
-// html {
-// 	font-size: 62.5%;
-// }
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    background: #FCFCFC;
+    color: #000000;
+}
+
+.skip-link:focus {
+    left: 0;    
+}
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -26,7 +43,7 @@
 img {
     max-width: 100%;
     height: auto;
-    // display: block;
+    display: block;
 }
 
 .logo {
