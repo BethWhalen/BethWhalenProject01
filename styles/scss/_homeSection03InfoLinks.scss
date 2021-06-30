@@ -9,6 +9,9 @@
             text-decoration: none;
             @include headings(40px);
         }
+        a:hover {
+            color: $accentA;
+        }
 }
 
 .customOffers,
@@ -35,5 +38,4 @@
             font-size: 30px;
         }
 }
-
 

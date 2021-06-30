@@ -12,6 +12,7 @@
 @import 'blogPage';
 @import 'formGeneralStyle';
 @import 'contactPage';
+@import 'mediaQueries';
 
 
 // general styling
@@ -78,4 +79,17 @@ li {
 }
 button {
     @include buttons;
+}
+
+button:focus {
+    border: 2px dotted $accentA;
+}
+button:hover {
+    color: $accentC;
+    background-color: $accentA;;
+}
+
+button:active {
+    color: $accentC;
+    background-color: $secondaryColor;
 }

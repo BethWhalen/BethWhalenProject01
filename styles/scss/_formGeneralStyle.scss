@@ -45,6 +45,11 @@ input[type="submit"] {
     margin: 30px 0 90px 0;
 }
 
+input[type="submit"]:hover {
+    color: $accentC;
+    background-color: $primaryColor;
+}
+
 input:active,
 input:focus,
 textarea:active,

@@ -278,6 +278,9 @@ html {
   color: #FAFFFE;
   padding: 10px;
 }
+.navLinks a:hover {
+  color: #FFC600;
+}
 
 .featureContainer {
   height: 85%;
@@ -389,6 +392,9 @@ html {
   font-size: 40px;
   font-family: "Dokdo", cursive;
   color: #FFC600;
+}
+.infoLinksContainer a:hover {
+  color: #FAFFFE;
 }
 
 .customOffers,
@@ -738,6 +744,11 @@ input[type=submit] {
   margin: 30px 0 90px 0;
 }
 
+input[type=submit]:hover {
+  color: #1E140E;
+  background-color: #FFC600;
+}
+
 input:active,
 input:focus,
 textarea:active,
@@ -917,4 +928,18 @@ button {
   font-size: 30px;
   padding: 5px 10px;
   margin: 10px 0;
+}
+
+button:focus {
+  border: 2px dotted #FAFFFE;
+}
+
+button:hover {
+  color: #1E140E;
+  background-color: #FAFFFE;
+}
+
+button:active {
+  color: #1E140E;
+  background-color: #555F02;
 }

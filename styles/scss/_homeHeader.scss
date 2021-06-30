@@ -21,6 +21,9 @@
             @include navFont;
             padding: 10px;
         }
+        a:hover {
+            color: $primaryColor;
+        }
 }
 
 .featureContainer {
