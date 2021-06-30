@@ -1,0 +1,320 @@
+@media (max-width: 980px) {
+
+    .feature {
+        height: 80%;
+    }
+
+    .welcomeHeading1 {
+        width: 100%;
+        font-size: 25px;
+        
+            .logo {
+                font-size: 70px;
+            }
+    }
+
+    // homeSection01NewAdventures
+
+    .newAdventure {
+        p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    // homeSection03InfoLinks
+
+    .infoLinks {
+        p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    // homeSection04Articles
+    .articles {
+        p {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    .articlesContainer {
+        padding: 35px 0;
+    }
+
+    .articles1ImgContainer,
+    .articles2ImgContainer {
+        padding: 0px;
+        img {
+            top: 20px;
+        }
+    }
+
+    .ArticlesTextAndButtonContainer1,
+    .ArticlesTextAndButtonContainer2 {
+        padding: 0 35px;
+    }
+
+    // homeSection06FreeTrials
+    .trialsContainer {
+        margin: 0 10px;
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+// ***********************768px****************************************************
+@media (max-width: 768px) {
+    .wrapper {
+        width: 98%;
+    }
+
+    .topNav {
+        height: 25%;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        align-items: flex-end;
+            li {
+                margin: 0 5px;
+            }
+    }
+
+    .feature {
+        height: 60%;
+    }
+
+    // homeSection01NewAdventure
+
+    .newAventure {
+        padding: 0;
+    }
+
+    .newAdventureContainer {
+        flex-direction: column;
+    }
+
+    .textAndButtonContainer {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            p {
+                text-align: center;
+            }
+    }
+
+    // homeSection03InfoLinks
+    .infoLinks {
+        padding: 50px 0;
+    }
+    .infoLinksContainer {
+        flex-direction: column;
+    }
+
+    .customOffers,
+    .community {
+        margin-bottom: 0px;
+    }
+
+    .textContainer {
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            p {
+                text-align: center;
+            }
+    }
+
+    .circle {
+        position: relative;
+    }
+
+    // homeSection04Articles
+
+    .ArticlesTextAndButtonContainer1,
+    .ArticlesTextAndButtonContainer2 {
+            h2 {
+                font-size: 30px;
+                margin: 0;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+    }
+
+    .ArticlesTextAndButtonContainer2 {
+            h2 {
+                align-self: flex-start;
+            }
+            button {
+                align-self: flex-start;
+            }
+}
+
+
+
+
+
+
+
+
+}
+// ***********************480px****************************************************
+@media (max-width: 480px) {
+    .homeHeader {
+        height: 55vh;
+    }
+    .logoDiv {
+        display: none;
+    }
+    
+    // .navListContainer {
+    //     width: 100%;
+    // }
+    
+    .navLinks li {
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .hamburgerMenu {
+        height: auto;
+        overflow: visible;
+        position: absolute;
+        right: 50px;
+        font-size: 40px;  
+    }
+
+    .feature {
+        flex-direction: column-reverse;
+    }
+
+    .welcomeHeading1 {
+        margin: 0 auto;
+        font-size: 23px;
+            .logo {
+                font-size: 60px;
+            }
+    }
+    // homeSection01NewAdventure
+
+    .textAndButtonContainer {
+            p {
+                font-size: 16px;
+            }
+    }
+
+    // homeSection02Gallery
+
+    .gallery {
+        padding: 0;
+    }
+    .galleryContainer {
+        flex-direction: column;
+            li {
+                width: 100%;
+                margin: 0;
+                padding: 45px;
+            }
+    }
+//     // homeSection03InfoLinks
+
+    .infoLinksContainer {
+            a {
+                font-size: 35px;
+            }
+    }
+    .textContainer {
+        padding: 20px;
+            p {
+                font-size: 16px;
+            }
+    }
+
+    .circle {
+        width: 45px;
+        height: 45px;
+            .fas {
+                font-size: 27px;
+            }
+    }
+
+//     // homeSection04Articles
+
+    .articlesContainer {
+        flex-direction: column;
+    }
+
+    .articlesContainer2 {
+        flex-direction: column-reverse;
+    }
+
+    .articles1ImgContainer {
+        width: 100%;
+        padding: 0 30px;
+            img {
+                top: 0;
+                box-shadow: none;
+            }
+    }
+
+    .ArticlesTextAndButtonContainer1,
+    .ArticlesTextAndButtonContainer2 {
+        width: 100%;
+//             h2 {
+//                 font-size: 30px;
+//                 margin: 0;
+//             }
+//             p {
+//                 font-size: 16px;
+//                 line-height: 24px;
+//             }
+}
+
+//     .ArticlesTextAndButtonContainer2 {
+//             h2 {
+//                 align-self: center;
+//             }
+//             button {
+//                 align-self: center;
+//             }
+// }
+
+    .articles2ImgContainer {
+        width: 100%;
+        padding: 0 30px;
+            img {
+                top: 0;
+                box-shadow: none;
+            }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

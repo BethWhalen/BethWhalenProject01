@@ -52,7 +52,7 @@ img {
 }
 
 p {
-    @include bodyText;
+    @include bodyText(20px);
 }
 
 h2 {
@@ -70,7 +70,7 @@ h3 {
 
 //used for date and name of comments section
 h4 {
-    @include bodyText;
+    @include bodyText(20px);
     color: $primaryColor;
 }
 

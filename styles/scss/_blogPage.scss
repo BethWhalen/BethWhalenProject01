@@ -68,7 +68,7 @@ main {
             padding: 0 5px;
         }
             li {
-                @include bodyText; 
+                @include bodyText(20px); 
                 // list-style-type: disc;
                 // padding-left: 5px;
             }

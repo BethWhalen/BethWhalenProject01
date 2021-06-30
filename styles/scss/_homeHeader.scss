@@ -26,18 +26,25 @@
         }
 }
 
+.hamburgerMenu {
+    color: $accentA;
+    height: 0;
+    overflow: hidden;
+}
+
 .featureContainer {
-    height: 85%;
+    height: 100%;
     position: relative;
+    // border: 2px solid white;
 }
 .feature {
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    // justify-content: space-between;
+    padding-right: 200px;
+    // border: 3px dashed blue;
         img {
-            max-width: 550px; 
-            width: 40%;
-            position: absolute;
+            position: relative;
             top: 60px;
             left: 0;
         }
@@ -45,13 +52,13 @@
 
 // h1:
 .welcomeHeading1 {
-    width: 60%;
     color: $accentA;
     font-family: $secondaryFont;
     font-weight: 500;
     font-size: 40px;
     line-height: 58px;
     margin: 75px 0;
+    // border: 3px solid yellow;
         .logo {
             font-size: 115px;
         }

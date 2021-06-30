@@ -1,6 +1,6 @@
 @mixin headerBackground($urlValue) {
     background-image: $urlValue;
-    height: 60vh;
+    height: 65vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,14 +17,14 @@
 }
 
 @mixin headings($sizeValue) {
-    font-size: ($sizeValue);
+    font-size: $sizeValue;
     font-family: $primaryFont;
     color: $primaryColor;
 }
 
-@mixin bodyText {
+@mixin bodyText($sizeValue) {
     font-family: $secondaryFont;
-    font-size: 20px;
+    font-size: $sizeValue;
     line-height: 32px;
     letter-spacing: 2px;
     color: $accentA;

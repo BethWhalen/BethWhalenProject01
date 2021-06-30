@@ -98,7 +98,7 @@ main {
 }
 
 .addressContainerList {
-    @include bodyText;
+    @include bodyText(20px);
         ul {
             padding: 0;
         }
