@@ -64,14 +64,46 @@
             }
     }
 
+// ******BLOG PAGE*********
 
+    .blog,
+    .comments,
+    .commentFormSection {
+            p {
+                font-size: 16px;
+            }
+    }
 
+    .missionAside {
+            p {
+                font-size: 16px;
+            }
+            li {
+                font-size: 16px;
+            }
+            li::before {
+                margin-right: 0;
+            }
+    }
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 16px;
+    }
 
+// ******CONTACT PAGE*********
 
+    .contactHeading1 {
+        font-size: 90px;
+    }
 
-
-
-
+    .contactFlexContainer {
+        width: 98%;
+        top: -100px;
+        left: 0;
+    }
+    .contactFormSection {
+        width: 65%;
+    }
 
 }
 
@@ -118,6 +150,7 @@
     }
 
     // homeSection03InfoLinks
+    
     .infoLinks {
         padding: 50px 0;
     }
@@ -168,26 +201,69 @@
             }
 }
 
+// ******BLOG PAGE*********
 
+    .blogPostContainer {
+        width: 90%;
+    }
+    .missionAside {
+        width: 100%;
+        position: static;
+        box-shadow: none;
+        display: flex;
+    }
 
+    .missionAsideDivImg,
+    .missionAsideDivText,
+    .missionAsideDivList {
+        width: calc((100% - 30px) / 3);
+        margin: 5px;
+    }
 
+    .comments {
+        width: 100%;
+            h2 {
+                top: 0px;
+                margin-top: 25px;
+            }
+    }
 
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 16px;
+    }
 
+    // ******CONTACT PAGE*********
 
+    .contactHeader {
+        height: 50vh;
+    }
+
+    .contactHeading1 {
+        font-size: 75px;
+        top: 15%;
+    }
+
+    .contactFormSection {
+        width: 95%;
+    }
+
+    .contactInfo {
+        position: relative;
+        top: 20px;
+        right: -250px;
+    }
 
 }
-// ***********************480px****************************************************
+// ***********************480px************************************************
 @media (max-width: 480px) {
     .homeHeader {
         height: 55vh;
     }
+
     .logoDiv {
         display: none;
     }
-    
-    // .navListContainer {
-    //     width: 100%;
-    // }
     
     .navLinks li {
         height: 0;
@@ -216,6 +292,9 @@
     // homeSection01NewAdventure
 
     .textAndButtonContainer {
+            h2 {
+                font-size: 42px;
+            }
             p {
                 font-size: 16px;
             }
@@ -234,7 +313,8 @@
                 padding: 45px;
             }
     }
-//     // homeSection03InfoLinks
+
+    // homeSection03InfoLinks
 
     .infoLinksContainer {
             a {
@@ -256,10 +336,11 @@
             }
     }
 
-//     // homeSection04Articles
+    // homeSection04Articles
 
     .articlesContainer {
         flex-direction: column;
+        align-content: center;
     }
 
     .articlesContainer2 {
@@ -278,24 +359,33 @@
     .ArticlesTextAndButtonContainer1,
     .ArticlesTextAndButtonContainer2 {
         width: 100%;
-//             h2 {
-//                 font-size: 30px;
-//                 margin: 0;
-//             }
-//             p {
-//                 font-size: 16px;
-//                 line-height: 24px;
-//             }
-}
+            p {
+                text-align: center;
+            }
+    }
 
-//     .ArticlesTextAndButtonContainer2 {
-//             h2 {
-//                 align-self: center;
-//             }
-//             button {
-//                 align-self: center;
-//             }
-// }
+    .ArticlesTextAndButtonContainer1 {
+        display: flex;
+        flex-direction: column;
+            h2 {
+                align-self: center;
+            }
+            p {
+                align-self: center;
+            }
+            button {
+                align-self: center;
+            }
+    }
+
+    .ArticlesTextAndButtonContainer2 {
+            h2 {
+                align-self: center;
+            }
+            button {
+                align-self: center;
+            }
+    }
 
     .articles2ImgContainer {
         width: 100%;
@@ -306,15 +396,100 @@
             }
     }
 
+    // homeSection06FreeTrials
 
+    .trialsContainer {
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 16px;
+                text-align: center;
+            }
+    }
 
+// ******BLOG PAGE*********
 
+    .blogHeader {
+        height: 45vh;
+    }
 
+    .blogHeading1 {
+        top: 0;
+    }
 
+    .blogPost {
+            h2 {
+                font-size: 40px;
+                line-height: 46px;
+                letter-spacing: 4px;
+                text-align: center;
+            }
+    }
 
+    .blog,
+    .comments,
+    .commentFormSection {
+            p {
+                font-size: 13px;
+                text-align: center;
+            }
+    }
+    
+    .blogPostContainer {
+        width: 98%;
+    }
 
+    .missionAside h3 {
+        margin: 0 auto;
+    }
 
+    .missionAsideDivText {
+        order: -1;
+    }
 
+    .missionAsideDivImg {
+        align-self: center;
+    }
 
+    .commentContainer {
+        flex-direction: column;
+            .commentArticleTitleAndText {
+                margin: 0 auto;
+                padding: 0;
+            }
+    }
+
+    .commenterImg {
+        width: 55%;
+        align-self: center;
+    }
+
+    .commentArticleTitleAndText {
+        padding: 0;
+    }
+
+    .formSubFlexContainer {
+        flex-direction: column;
+    }
+
+    textarea {
+        padding: 10px;
+        width: 400px;
+    }
+
+    // ******CONTACT PAGE*********
+
+    .contactInfo {
+        right: -5px;
+    }
+
+    .contactForm {
+        box-shadow: none;
+            textarea {
+                padding: 10px;
+                width: 300px;
+            }
+    }
 
 }

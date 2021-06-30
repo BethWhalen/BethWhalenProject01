@@ -902,6 +902,57 @@ main {
     font-size: 18px;
     line-height: 28px;
   }
+
+  .blog p,
+.comments p,
+.commentFormSection p {
+    font-size: 16px;
+  }
+
+  .missionAside p {
+    font-size: 16px;
+  }
+  .missionAside li {
+    font-size: 16px;
+  }
+  .missionAside li::before {
+    margin-right: 0;
+  }
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::placeholder,
+textarea::placeholder {
+    font-size: 16px;
+  }
+
+  .contactHeading1 {
+    font-size: 90px;
+  }
+
+  .contactFlexContainer {
+    width: 98%;
+    top: -100px;
+    left: 0;
+  }
+
+  .contactFormSection {
+    width: 65%;
+  }
 }
 @media (max-width: 768px) {
   .wrapper {
@@ -1014,6 +1065,75 @@ main {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
+
+  .blogPostContainer {
+    width: 90%;
+  }
+
+  .missionAside {
+    width: 100%;
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .missionAsideDivImg,
+.missionAsideDivText,
+.missionAsideDivList {
+    width: calc((100% - 30px) / 3);
+    margin: 5px;
+  }
+
+  .comments {
+    width: 100%;
+  }
+  .comments h2 {
+    top: 0px;
+    margin-top: 25px;
+  }
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::placeholder,
+textarea::placeholder {
+    font-size: 16px;
+  }
+
+  .contactHeader {
+    height: 50vh;
+  }
+
+  .contactHeading1 {
+    font-size: 75px;
+    top: 15%;
+  }
+
+  .contactFormSection {
+    width: 95%;
+  }
+
+  .contactInfo {
+    position: relative;
+    top: 20px;
+    right: -250px;
+  }
 }
 @media (max-width: 480px) {
   .homeHeader {
@@ -1052,6 +1172,9 @@ main {
     font-size: 60px;
   }
 
+  .textAndButtonContainer h2 {
+    font-size: 42px;
+  }
   .textAndButtonContainer p {
     font-size: 16px;
   }
@@ -1096,6 +1219,8 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 
   .articlesContainer2 {
@@ -1119,6 +1244,41 @@ main {
 .ArticlesTextAndButtonContainer2 {
     width: 100%;
   }
+  .ArticlesTextAndButtonContainer1 p,
+.ArticlesTextAndButtonContainer2 p {
+    text-align: center;
+  }
+
+  .ArticlesTextAndButtonContainer1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ArticlesTextAndButtonContainer1 h2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .ArticlesTextAndButtonContainer1 p {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .ArticlesTextAndButtonContainer1 button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .ArticlesTextAndButtonContainer2 h2 {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .ArticlesTextAndButtonContainer2 button {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 
   .articles2ImgContainer {
     width: 100%;
@@ -1128,6 +1288,101 @@ main {
     top: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+
+  .trialsContainer h2 {
+    font-size: 40px;
+  }
+  .trialsContainer p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .blogHeader {
+    height: 45vh;
+  }
+
+  .blogHeading1 {
+    top: 0;
+  }
+
+  .blogPost h2 {
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .blog p,
+.comments p,
+.commentFormSection p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .blogPostContainer {
+    width: 98%;
+  }
+
+  .missionAside h3 {
+    margin: 0 auto;
+  }
+
+  .missionAsideDivText {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .missionAsideDivImg {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .commentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .commentContainer .commentArticleTitleAndText {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .commenterImg {
+    width: 55%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .commentArticleTitleAndText {
+    padding: 0;
+  }
+
+  .formSubFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  textarea {
+    padding: 10px;
+    width: 400px;
+  }
+
+  .contactInfo {
+    right: -5px;
+  }
+
+  .contactForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contactForm textarea {
+    padding: 10px;
+    width: 300px;
   }
 }
 .skip-link {

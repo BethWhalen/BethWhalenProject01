@@ -2,29 +2,7 @@
     @include headerBackground(url(../assets/contact-image-1.jpg))
 }
 
-// nav is styled in the homeHeader.scss with the following: 
-
-// .topNav {
-//     display: flex;
-//     height: 15%;
-//     align-items: center;
-// }
-
-// .navLinks {
-//     display: flex;
-//     flex: 1 0 50%;
-//     justify-content: flex-end;
-//     // border: 2px solid pink;
-//         li {
-//             list-style-type: none;
-//             margin: 0 20px;
-//         }
-//         a {
-//             text-decoration: none;
-//             @include navFont;
-//             padding: 10px;
-//         }
-// }
+// nav is styled in the homeHeader.scss
 
 // h1: 
 .contactHeading1 {
@@ -44,12 +22,12 @@ main {
     top: -150px;
     left: -25px;
 }
+
 .contactFormSection {
     width: 70%;
-    // border: 2px solid blue;
 }
+
 .contactForm {
-    // border: 3px dashed hotpink;
     background-color: $accentB;
     padding: 40px;
     box-shadow: 20px 20px $primaryColor;
@@ -67,20 +45,17 @@ main {
     position: absolute;
     top: 200px;
     right: 0;
-    // border: 1px solid white;
 }
 
 .socialIconsList {
     display: flex;
     padding: 0;
-    // border: 2px solid cornflowerblue;
         li {
                 a {
                     padding: 10px 10px 10px 1px;
                     margin-right: 15px;
                     color: $primaryColor;
                     font-size: 20px;
-                    // border: 2px solid white;
                 }
         }
 }

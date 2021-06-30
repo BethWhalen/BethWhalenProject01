@@ -2,29 +2,7 @@
     @include headerBackground(url(../assets/blog-image-1.jpg))
 }
 
-// nav is styled in the homeHeader.scss with the following: 
-
-// .topNav {
-//     display: flex;
-//     height: 15%;
-//     align-items: center;
-// }
-
-// .navLinks {
-//     display: flex;
-//     flex: 1 0 50%;
-//     justify-content: flex-end;
-//     // border: 2px solid pink;
-//         li {
-//             list-style-type: none;
-//             margin: 0 20px;
-//         }
-//         a {
-//             text-decoration: none;
-//             @include navFont;
-//             padding: 10px;
-//         }
-// }
+// nav is styled in the homeHeader.scss 
 
 // h1: 
 .blogHeading1 {
@@ -69,8 +47,6 @@ main {
         }
             li {
                 @include bodyText(20px); 
-                // list-style-type: disc;
-                // padding-left: 5px;
             }
             li::before {
                 content: "\2022";

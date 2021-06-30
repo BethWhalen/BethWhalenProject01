@@ -12,7 +12,6 @@
     display: flex;
     flex: 1 0 50%;
     justify-content: flex-end;
-    // border: 2px solid pink;
         li {
             margin: 0 20px;
         }
@@ -35,14 +34,12 @@
 .featureContainer {
     height: 100%;
     position: relative;
-    // border: 2px solid white;
 }
+
 .feature {
     height: 100%;
     display: flex;
-    // justify-content: space-between;
     padding-right: 200px;
-    // border: 3px dashed blue;
         img {
             position: relative;
             top: 60px;
@@ -58,7 +55,6 @@
     font-size: 40px;
     line-height: 58px;
     margin: 75px 0;
-    // border: 3px solid yellow;
         .logo {
             font-size: 115px;
         }
