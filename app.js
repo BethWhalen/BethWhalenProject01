@@ -21,9 +21,12 @@ burgerMenu.addEventListener('click', function(){
 })
 
 closeMenuButton.addEventListener('click', function(){
-    closeMenuButton.classList.toggle('closeMenu');
+    closeMenuButton.classList.toggle('closeMenuVisible');
+    burgerMenu.classList.toggle('hamburgerMenuOpen')
+    displayNavLinks.classList.toggle('open');
 })
 
+// There must be a cleaner way to write this...?? Better css / class choices? Using an if statement in a function?
 
 
 
@@ -55,25 +58,46 @@ closeMenuButton.addEventListener('click', function(){
 // 1. access the form and add an event listener
 // NOTE FROM CLASSMATE SEAN IN DISCUSSION OF ERROR MESSAGE (formEl.addEventListener is not a function): "that error message comes up when you try to addEventListener to anarray of element instead of a single element. So probably due to the getElementsByClassName. If there is only one form, try adding ['0'] at the end"
 
-// const formEl = document.getElementsByClassName('commentForm')[0];
-
+const formEl = document.getElementsByClassName('commentForm')[0];
 // const formEl = document.querySelector('form');
 
-// formEl.addEventListener('submit', function (e) {
-//     e.preventDefault();
-//     console.log('submit form clicked');
+formEl.addEventListener('submit', function (e) {
+    e.preventDefault();
+    console.log('submit form clicked');
+    
+    // 2. get the values the user inputs
+    const userName = document.querySelector('[id="name"]').value;
+    const userComment = document.querySelector('[id="comment"]').value;
+    // console.log(userName);
+    // console.log(userComment);
+    // neeed to figure out how to add today's date...
+    // const commentDate = new Date('need to fix');
 
-// // 2. get the values the user inputs
-// // not sure if this is correct??
-// const userName = document.querySelector('[id="name"]');
-// //neeed to figure out how to add today's date...
-// const commentDate = new Date('need to fix');
+    //made the div...need to pick where it is going to go...needs to be last child in the section with a class of "comments"
+    const commentSection = document.getElementsByClassName('comments');
+    // when submit is clicked...take the user input values and place them into html and onto the page.
+    const newCommentDiv = document.createElement('div');
+    // newCommentDiv.ClassList.add('newCommentContainer');
+    // newCommentDiv.ClassList.add('commentContainer');
+    // newCommentDiv.ClassList.add('wrapper');
 
-// console.log(commentDate);
+    // <div class="newCommenterImg commenterImg">
+    //     <img class="newImg" src="" alt="">
+    // </div>
+    // <article class="newCommentArticle commentArticleTitleAndText">
+    //     <h4 class="newCommentDateAndName">${userName}</h4>
+    //     <p class="newComment">${userComment}</p>
+    // </article>
+    newCommentDiv.innerHTML = `
+        <article>
+            <h4>[userName]</h4>
+            <p>userComment</p>
+        </article>
+    `;
+
+    commentSection.appendChild(newCommentDiv);
 
 
 
-
-
-// })
+})
 

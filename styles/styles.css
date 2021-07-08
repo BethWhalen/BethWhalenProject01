@@ -1153,6 +1153,7 @@ textarea::placeholder {
   .open {
     height: auto;
     padding-right: 70px;
+    padding-top: 20px;
   }
 
   .hamburgerMenu {
@@ -1322,7 +1323,7 @@ textarea::placeholder {
   }
 
   .blogHeading1 {
-    top: 0;
+    top: 50px;
   }
 
   .blogPost h2 {
