@@ -282,7 +282,8 @@ html {
   color: #FFC600;
 }
 
-.hamburgerMenu {
+.hamburgerMenu,
+.closeMenu {
   color: #FAFFFE;
   height: 0;
   overflow: hidden;
@@ -1144,12 +1145,30 @@ textarea::placeholder {
     display: none;
   }
 
-  .navLinks li {
+  .navLinks {
     height: 0;
     overflow: hidden;
   }
 
+  .open {
+    height: auto;
+    padding-right: 70px;
+  }
+
   .hamburgerMenu {
+    height: auto;
+    overflow: visible;
+    position: absolute;
+    right: 50px;
+    font-size: 40px;
+  }
+
+  .hamburgerMenuOpen {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .closeMenuVisible {
     height: auto;
     overflow: visible;
     position: absolute;

@@ -265,19 +265,40 @@
         display: none;
     }
     
-    .navLinks li {
+    // .navLinks li {
+    //     height: 0;
+    //     overflow: hidden;
+    // }
+
+    .navLinks {
         height: 0;
         overflow: hidden;
     }
     
+    .open {
+        height: auto;
+        padding-right: 70px;
+    }
+
     .hamburgerMenu {
         height: auto;
         overflow: visible;
         position: absolute;
         right: 50px;
-        font-size: 40px;  
+        font-size: 40px;
     }
-
+    .hamburgerMenuOpen{
+        height: 0;
+        overflow: hidden;
+    }
+    .closeMenuVisible {
+        height: auto;
+        overflow: visible;
+        position: absolute;
+        right: 50px;
+        font-size: 40px;
+    }
+    
     .feature {
         flex-direction: column-reverse;
     }
