@@ -3,24 +3,27 @@
 // when clicked, apply the class of .open to the nav, making the navlinks visible
 // add an X icon for closing the menu (update its class)
 // make the X icon have an event listener so when clicked, it closes the menu and the hamburger returns
-// 
+
+// helpful tutorials: 
+// https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+// https://www.youtube.com/watch?v=1iS0r238G4g
 
 // 
 //declare variables
 const burgerMenu = document.querySelector('.hamburgerMenu');
 const displayNavLinks = document.querySelector('.navLinks');
-const makeTopNavBigger = document.querySelector('.topNap');
 const closeMenuButton = document.querySelector('.closeMenu');
 
 burgerMenu.addEventListener('click', function(){
-    burgerMenu.classList.add('hamburgerMenuOpen')
-    displayNavLinks.classList.add('open');
-    closeMenuButton.classList.add('closeMenuVisible');
+    burgerMenu.classList.toggle('hamburgerMenuOpen')
+    displayNavLinks.classList.toggle('open');
+    closeMenuButton.classList.toggle('closeMenuVisible');
 })
 
-function toggleMenu() {
-    if 
-}
+closeMenuButton.addEventListener('click', function(){
+    closeMenuButton.classList.toggle('closeMenu');
+})
+
 
 
 
